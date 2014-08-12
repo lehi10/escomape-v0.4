@@ -35,6 +35,17 @@ $(function(){
 	}
 } 
 </script>
+
+<script>
+function conf_eliminar() {
+    if (confirm("Esta seguro de eliminar al Administrador ") == true) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+</script>
 </head>
 <body>
 
@@ -135,15 +146,19 @@ $(function(){
 					         <th scope='col' style='width: 50px;'>ID </th>
 					         <th scope='col' style='width: 100px;'>Permisos</th>
 					         <th scope='col'>Nombres</th> 
-					         <th scope='col'>Apellidos</th> 
+					         <th scope='col'>Apellidos</th>
+					         <th scope='col' style='width: 50px;'>Eliminar</th> 
+
 					      </tr>";
 					while($row=mysql_fetch_array($result))
 					{
+
 					 echo "<tr>
 					         <td class='align-center'> $row[0] </td>
 					         <td class='align-center'> $row[1] </td>
 					         <td> $row[2] </td>
 					         <td> $row[3] </td>
+					         <td class='align-center'><a href='eliminar_adm.php?id=$row[0]' class='table-icon delete' title='Ver' onclick='return conf_eliminar()'></a></td>
 					      </tr>";
 					}
 					echo "</table>";
