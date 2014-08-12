@@ -33,11 +33,13 @@ $(function(){
 			</div>
 			<div class="right">
 				<div class="align-right">
-					<p>Last login: <strong>00-00-2014 12:12</strong></p>
+					<img src="../../img/logo.png"  width="200">
 				</div>
 			</div>
 		</div>
 		<div id="nav">
+
+		
 			<ul>
 				<li class="upp"><a href="http://www.escomape.com">Pagina Principal</a></li>
 				<li class="upp"><a href="index.php">Inicio</a></li>
@@ -198,11 +200,9 @@ $(function(){
 
 	<div id="footer">
 		<div class="left">
-			<p>Design: <a href="">CSN</a> | Admin Panel: <a href="">Computer Science News</a></p>
+			<p>Design: <a href="">Sixx</a> | Admin Panel: <a href="">ESCOMAPE</a></p>
 		</div>
-		<div class="right">
-			<p><a href="">2014</a> | <a href="">Universidad Nacional de San Agustín</a></p>
-		</div>
+
 	</div>
 </div>
 

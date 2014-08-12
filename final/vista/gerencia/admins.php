@@ -20,17 +20,36 @@ $(function(){
 	$(".box").children(".h_title").click( function() { $(this).next("ul").slideToggle(); });
 });
 </script>
+<script> function validar()
+{ 
+	var p1 = document.getElementById("pass").value;
+	var p2 = document.getElementById("re_pass").value;
+	if (p1 != p2)
+	{
+  		alert("Las contraseñas deben coincidir");
+  		return false;
+  	}
+  	else 
+  	{
+  		return true;
+	}
+} 
+</script>
 </head>
 <body>
+
+
 <div class="wrap">
 	<div id="header">
+		
 		<div id="top">
+
 			<div class="left">
 				<p>Welcome, <strong>USUARIO </strong> [ <a href="../logout.php">logout</a> ]</p>
 			</div>
 			<div class="right">
 				<div class="align-right">
-					<p>Last login: <strong>00-00-2014 12:12</strong></p>
+					<img src="../../img/logo.png"  width="200">
 				</div>
 			</div>
 		</div>
@@ -56,7 +75,9 @@ $(function(){
 						</ul>
 					</li>
 			</ul>
+	
 		</div>
+
 	</div>
 	
 	<div id="content">
@@ -131,7 +152,7 @@ $(function(){
 
 
 
-				<h3>Cambiar Permisos </h3>
+				<h2>Cambiar Permisos </h2>
 				<form class="contact_form" method="post" action="modificar_adm.php">
 					 <table>
 
@@ -165,10 +186,74 @@ $(function(){
 
 
 
+				<h2>Agregar Administradoress </h2>
+				<form class="contact_form"  method="post" onSubmit="return validar() "action="agregar_adm.php">
+					 <table>
+						<tr>
+							<td>
+								<label for="id">Id del Administrador:</label>
+							</td>
+							<td>
+								<input type="text" required="" placeholder="ID" name="id"></input>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="id">Contraseña del Administrador:</label>
+							</td>
+							<td>
+								<input type="password" required="" placeholder="Contraseña" id="pass" name="pass"></input>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="id">Repira la contraseña:</label>
+							</td>
+							<td>
+								<input type="password" required="" placeholder="Contraseña" id="re_pass" name="re_pass"></input>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="id">Nombre del Administrador:</label>
+							</td>
+							<td>
+								<input type="text" required="" placeholder="Nombres" name="nombre"></input>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="id">Apellidos del Administrador:</label>
+							</td>
+							<td>
+								<input type="text" required="" placeholder="Apellidos" name="apellidos"></input>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="permiso">Tipo de Permiso:</label>
+							</td>
+							<td>
+								<SELECT style='width: 150px;' NAME="permiso"> 
+									<OPTION VALUE="-">-</OPTION>
+									<OPTION VALUE="libreta">Libretas</OPTION> 	
+								</SELECT> 
+							</td>
+						</tr>
+
+					 </table>
+				 <center>
+				 	<button class="submit" type="submit" 	>Enviar</button>
+				 </center>
+				    
+				</form>
+
+
+
+
 
 			</div>
 		</div>
-
 
 
 
@@ -177,13 +262,11 @@ $(function(){
 
 	<div id="footer">
 		<div class="left">
-			<p>Design: <a href="">CSN</a> | Admin Panel: <a href="">Computer Science News</a></p>
-		</div>
-		<div class="right">
-			<p><a href="">2014</a> | <a href="">Universidad Nacional de San Agustín</a></p>
+			<p>Design: <a href="">Sixx</a> | Admin Panel: <a href="">ESCOMAPE</a></p>
 		</div>
 	</div>
 </div>
 
 </body>
 </html>
+

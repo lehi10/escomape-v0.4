@@ -121,17 +121,14 @@ $(function(){
 
 
 
-
 		<div class="clear"></div>
 	</div>
 
 	<div id="footer">
 		<div class="left">
-			<p>Design: <a href="">CSN</a> | Admin Panel: <a href="">Computer Science News</a></p>
+			<p>Design: <a href="">Sixx</a> | Admin Panel: <a href="">ESCOMAPE</a></p>
 		</div>
-		<div class="right">
-			<p><a href="">2014</a> | <a href="">Universidad Nacional de San Agustín</a></p>
-		</div>
+
 	</div>
 </div>
 

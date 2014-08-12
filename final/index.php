@@ -15,8 +15,10 @@ if(isset($_SESSION['id']))
 </head>
 <body>
   
-
-
+<center>
+<br>
+	<img src="img/logo.png"  width="400">
+</center>
   <form method="post" action="vista/v_verifica.php" class="login">
     <p>
       <label for="login">ID:</label>

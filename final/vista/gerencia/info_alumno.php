@@ -24,13 +24,15 @@ $(function(){
 <body>
 <div class="wrap">
 	<div id="header">
+		
 		<div id="top">
+
 			<div class="left">
 				<p>Welcome, <strong>USUARIO </strong> [ <a href="../logout.php">logout</a> ]</p>
 			</div>
 			<div class="right">
 				<div class="align-right">
-					<p>Last login: <strong>00-00-2014 12:12</strong></p>
+					<img src="../../img/logo.png"  width="200">
 				</div>
 			</div>
 		</div>
@@ -192,13 +194,11 @@ $(function(){
 
 	<div id="footer">
 		<div class="left">
-			<p>Design: <a href="">CSN</a> | Admin Panel: <a href="">Computer Science News</a></p>
-		</div>
-		<div class="right">
-			<p><a href="">2014</a> | <a href="">Universidad Nacional de San Agustín</a></p>
+			<p>Design: <a href="">Sixx</a> | Admin Panel: <a href="">ESCOMAPE</a></p>
 		</div>
 	</div>
 </div>
 
 </body>
 </html>
+

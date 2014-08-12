@@ -54,13 +54,15 @@ doc.fromHTML($('body').get(0), 15, 15, {'width': 170,'elementHandlers': specialE
 
 <div class="wrap">
 	<div id="header">
+		
 		<div id="top">
+
 			<div class="left">
-				<p>Welcome, <strong><?php echo $_SESSION['id']?> </strong> [ <a href="../logout.php">logout</a> ]</p>
+				<p>Welcome, <strong>USUARIO </strong> [ <a href="../logout.php">logout</a> ]</p>
 			</div>
 			<div class="right">
 				<div class="align-right">
-					<strong><p>Ingresos Restantes : <?php echo $_SESSION['cant_descargas']-1; ?></p></strong>
+					<img src="../../img/logo.png"  width="200">
 				</div>
 			</div>
 		</div>
@@ -191,22 +193,18 @@ doc.fromHTML($('body').get(0), 15, 15, {'width': 170,'elementHandlers': specialE
 							</table>
 					</div>				
 			</div>
+
 		<div class="clear"></div>
 	</div>
-		<center><a class="button"  href="pdf.php">Descargar Libreta</a><a class="button"  href="javascript:imprSelec('to_print')">Imprimir Libreta</a></center>
-		<br>
-		
-
 
 	<div id="footer">
 		<div class="left">
-			<p>Design: <a href="">CSN</a> | Admin Panel: <a href="">Computer Science News</a></p>
+			<p>Design: <a href="">Sixx</a> | Admin Panel: <a href="">ESCOMAPE</a></p>
 		</div>
-		<div class="right">
-			<p><a href="">2014</a> | <a href="">Universidad Nacional de San Agustín</a></p>
-		</div>
+
 	</div>
 </div>
 
 </body>
 </html>
+
