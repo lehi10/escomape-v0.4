@@ -196,7 +196,8 @@ doc.fromHTML($('body').get(0), 15, 15, {'width': 170,'elementHandlers': specialE
 
 		<div class="clear"></div>
 	</div>
-
+	<center><a class="button" href="pdf.php">Descargar Libreta</a><a class="button" href="javascript:imprSelec('to_print')">Imprimir Libreta</a></center>
+	<br>
 	<div id="footer">
 		<div class="left">
 			<p>Design: <a href="">Sixx</a> | Admin Panel: <a href="">ESCOMAPE</a></p>
